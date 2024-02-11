@@ -1,8 +1,11 @@
+# https://github.com/foreversd/forever
+
 npm install -g forever
 forever start server.js
 forever list
 forever stop | restart [pid]
+forever logs
 
-Options
+Check options
 forever --logFile 
 forever --help
