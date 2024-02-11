@@ -1,0 +1,20 @@
+# http://supervisord.org/
+
+sudo apt-get install supervisor
+
+Create a configuration file for your Node.js process.
+my_node_app.conf:
+[program:my_node_app]
+command=node /path/to/your_script.js
+directory=/path/to/your/app
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/my_node_app.err.log
+stdout_logfile=/var/log/my_node_app.out.log
+
+sudo supervisord -c /etc/supervisor/supervisord.conf
+
+To start all configured processes: sudo supervisorctl start all
+To start a specific process: sudo supervisorctl start my_node_app
+To stop a process: sudo supervisorctl stop my_node_app
+To restart a process: sudo supervisorctl restart my_node_app
