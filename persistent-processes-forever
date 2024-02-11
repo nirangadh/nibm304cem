@@ -1,0 +1,8 @@
+npm install -g forever
+forever start server.js
+forever list
+forever stop | restart [pid]
+
+Options
+forever --logFile 
+forever --help
