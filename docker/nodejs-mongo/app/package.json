@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-redis-mongodb-example",
+  "version": "1.0.0",
+  "description": "Simple Node.js application with Redis and MongoDB using Docker Compose",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.1.2",
+    "mongodb": "^3.6.6"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
